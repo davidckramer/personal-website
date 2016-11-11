@@ -36,9 +36,19 @@ html, body {
 
 /* MAIN */
 
+.thumb_items {
+  list-style: none;
+}
+
+.thumb {
+  float: left;
+  width: 33.33%;
+  max-height: 960px;
+}
+
 #photos {
    /* Prevent vertical gaps */
-   line-height: 0;
+   /*line-height: 0;
 
    -webkit-column-count: 3;
    -webkit-column-gap:   0px;
@@ -52,7 +62,7 @@ html, body {
 
 #photos img {
   /* Just in case there are inline attributes */
-  width: 100% !important;
+  /*width: 100% !important;
   height: auto !important;
 }
 
@@ -76,7 +86,7 @@ html, body {
   -webkit-column-count: 1;
   column-count:         1;
   }
-}
+}*/
 
 body {
   margin: 0;
