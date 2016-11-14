@@ -19,19 +19,40 @@ html, body {
   min-width: 400px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: 'Inknut Antiqua', Georgia, serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+h2 {
+  font-family: 'Inknut Antiqua', Georgia, serif;
+  font-weight: medium;
+  font-size: 17px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
 .logo {
   width: 80px;
   height: 80px;
   position: absolute;
-  margin-top: 25px;
-  margin-left: 25px;
   cursor: crosshair;
   z-index: 999;
-}
-
-.logo: hover {
-  width: 100px;
-  height: 100px;
 }
 
 /* MAIN */
@@ -44,6 +65,53 @@ html, body {
   float: left;
   width: 33.33%;
   max-height: 960px;
+}
+
+#nav_column {
+  width: 8%;
+  height: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+  overflow: hidden;
+  background-size: cover;
+  background-color: blue;
+  position: fixed;
+  float: left;
+  z-index: 999;
+}
+
+.nav_items {
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Inknut Antiqua', Georgia, serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 25px;
+  cursor: crosshair;
+}
+
+#about {
+  width: 83.33%;
+  height: 100%;
+  border: 15px solid white;
+  padding-left: 8%;
+  overflow: scroll;
+  background-color: #f1f1f2;
+  background-size: cover;
+  position: fixed;
+  float: right;
+  z-index: 990;
+}
+
+.myface {
+  width: 300px;
+  height: 300px;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
 }
 
 #photos {
