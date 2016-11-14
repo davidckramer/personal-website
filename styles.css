@@ -16,17 +16,21 @@ body {
 }
 
 html, body {
-  min-width: 400px;
+  min-width: 720px;
 }
 
 a {
   color: black;
+  font-family: 'Inknut Antiqua', Georgia, serif;
+  font-weight: bold;
+  font-size: 12px;
   text-decoration: none;
 }
 
 p {
   font-family: 'Anonymous Pro', monospace;
   font-size: 12px;
+  line-height: 17px;
 }
 
 h1 {
@@ -39,23 +43,16 @@ h2 {
   font-family: 'Inknut Antiqua', Georgia, serif;
   font-weight: medium;
   font-size: 17px;
-  line-height: 40px;
-  margin-bottom: 15px;
+  line-height: 25px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 ul {
   list-style: none;
 }
 
-.logo {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  cursor: crosshair;
-  z-index: 999;
-}
-
-/* MAIN */
+/* INDEX PROJECT THUMBNAILS */
 
 .thumb_items {
   list-style: none;
@@ -67,17 +64,45 @@ ul {
   max-height: 960px;
 }
 
+/* NAVIGATION */
+
+  /* PARENT */
+
 #nav_column {
-  width: 8%;
+  width: 300px;
   height: 100%;
   margin-top: 15px;
   margin-left: 15px;
   overflow: hidden;
-  background-size: cover;
-  background-color: blue;
   position: fixed;
   float: left;
   z-index: 999;
+  align-content: center;
+}
+
+  /* CHILDREN */
+
+.nav_content {
+  width: 150px;
+  height: 100%;
+  padding-top: 35px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  align-content: center;
+}
+
+  /* GRANDCHILDREN */
+
+.logo {
+  width: 80px;
+  height: 80px;
+  cursor: crosshair;
+  z-index: 999;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav_items {
@@ -88,15 +113,22 @@ ul {
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 1px;
-  line-height: 25px;
+  line-height: 20px;
+  margin-top: 85px;
   cursor: crosshair;
 }
 
+/* ABOUT SECTION */
+
+  /* PARENT */
+
 #about {
-  width: 83.33%;
+  width: 80%;
   height: 100%;
-  border: 15px solid white;
   padding-left: 8%;
+  margin-left: 20%;
+  box-sizing: border-box;
+  border: 15px solid white;
   overflow: scroll;
   background-color: #f1f1f2;
   background-size: cover;
@@ -105,6 +137,16 @@ ul {
   z-index: 990;
 }
 
+  /* CHILDREN */
+
+.about_content {
+  max-width: 600px;
+  padding-right: 8%;
+  padding-top: 4%;
+}
+
+  /* GRANDCHILDREN */
+
 .myface {
   width: 300px;
   height: 300px;
@@ -112,6 +154,10 @@ ul {
   margin-bottom: 50px;
 }
 
+.legal {
+  left: 25px;
+  bottom: 25px;
+  position: fixed;
 }
 
 #photos {
